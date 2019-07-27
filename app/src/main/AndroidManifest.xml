@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="br.com.kotlinaula.jokenpo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/FullScreen">
+        <activity android:name=".view.ranking.RankingActivity">
+        </activity>
+        <activity android:name=".view.game_over.GameOverActivity">
+        </activity>
+        <activity android:name=".view.game.GameActivity">
+        </activity>
+        <activity android:name=".view.about.AboutActivity">
+        </activity>
+        <activity android:name=".view.menu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
